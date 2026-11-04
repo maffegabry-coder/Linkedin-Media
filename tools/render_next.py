@@ -164,13 +164,14 @@ A = [
          '<div class="sub">An Amsterdam court backed Booking.com: at least <b>40%</b> of working time on site. Today only <b>27%</b> of staff meet it.</div>'
          f'<div class="art">{art_week()}</div>'
          '<h1 style="font-size:58px;margin-bottom:28px">A rule fills desks. <em>What fills the office?</em></h1>', SRC_BK),
-    page("l", "Mandates are back", "2/6",
-         '<h1>Rules go up.<br><em>Attendance lags.</em></h1>'
-         '<div class="sub">The same week, ORGATEC in Cologne chose its first ever theme: "From rooms to relationships".</div><div class="grow"></div>'
+    page("l", "Same week, two answers", "2/6",
+         '<h1>The office is not dying. <em>It is being tested.</em></h1>'
+         '<div class="sub">Amsterdam pushed people back in. San Francisco\'s AI firms went looking for more space. ORGATEC named the question: "From rooms to relationships".</div><div class="grow"></div>'
          + tiles([("40%", "of working time on site, the new Booking.com rule"),
                   ("27%", "of its staff meet that bar today"),
-                  ("51-60%", "typical office occupancy across occupiers"),
-                  ("~40%", "of occupiers require 2 to 3 office days a week")]), SRC_CW25),
+                  ("90", "AI companies looking for office space in San Francisco"),
+                  ("5.3m sq ft", "their combined requirement, 29% of US AI office demand")]),
+         "Sources: Allwork.Space, 28 Oct 2026; The Real Deal, 3 Nov 2026 (VTS Q3 2026 data)"),
     page("d", "Principle 1 - Design for the peak", "3/6",
          '<h1>Tuesday and Thursday <em>decide the floor plan.</em></h1>'
          '<div class="sub">The court also ruled that every employee who comes in must find a place to sit. Average occupancy is no longer the design brief.</div>'
@@ -269,7 +270,7 @@ C = [
          '<div class="sub" style="margin-top:0;margin-bottom:32px">Tell me from your projects.</div>'),
 ]
 
-SETS = {"post02_office-mandates": A, "post03_flex-after-ai": B, "post04_italy-luxury-hotels": C}
+SETS = {"post02_office-mandates_v2": A, "post03_flex-after-ai": B, "post04_italy-luxury-hotels": C}
 
 
 async def main():
